@@ -1,0 +1,313 @@
+/* Definições gerais de estilo */
+
+/* Define a fonte padrão para todo o documento */
+html {
+  font-family: sans-serif; 
+}
+
+/* Ajusta o tamanho do texto após mudanças de orientação em IE e iOS */
+html {
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+/* Remove a margem padrão do corpo */
+body {
+  margin: 0;
+}
+
+/* Definições de elementos HTML5 */
+
+/* Define a propriedade 'display' para vários elementos HTML5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main, 
+menu,
+nav,
+section,
+summary { 
+  display: block;
+}
+
+/* Definições de elementos de mídia */
+
+/* Define a propriedade 'display' para elementos de mídia */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* Oculta elementos de áudio sem controles */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Ajusta a alinhamento vertical do elemento de progresso */
+progress {
+  vertical-align: baseline;
+}
+
+/* Oculta elementos de template e elementos com atributo 'hidden' */
+template, 
+[hidden] {
+  display: none;
+}
+
+/* Estilização de links */
+
+/* Define o fundo transparente e evita sublinhado em objetos em links */
+a {
+  background-color: transparent; 
+  -webkit-text-decoration-skip: objects; 
+}
+
+/* Remove a borda do link quando ativo ou em foco */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Outras definições de texto */
+
+/* Estilização de abreviações */
+abbr[title] {
+  border-bottom: none; 
+  text-decoration: underline; 
+  text-decoration: underline dotted; 
+}
+
+/* Estilização de texto em negrito */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/* Estilização de texto em negrito */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Estilização de definições */
+dfn {
+  font-style: italic;
+}
+
+/* Estilização de títulos */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Estilização de marcações */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/* Estilização de texto pequeno */
+small {
+  font-size: 80%;
+}
+
+/* Estilização de texto subscrito e sobrescrito */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* Estilização de texto subscrito */
+sub {
+  bottom: -0.25em;
+}
+
+/* Estilização de texto sobrescrito */
+sup {
+  top: -0.5em;
+}
+
+/* Estilização de imagens */
+
+/* Remove a borda padrão de imagens dentro de links */
+img {
+  border-style: none;
+}
+
+/* Oculta a área de overflow de SVG em navegadores */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Estilização de código e elementos de código */
+
+/* Define a fonte para código */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; 
+}
+
+/* Estilização de figuras */
+
+/* Define a margem para figuras */
+figure {
+  margin: 1em 40px;
+}
+
+/* Estilização de linhas */
+
+/* Ajusta o tamanho da linha */
+hr {
+  box-sizing: content-box; 
+  height: 0; 
+  overflow: visible; 
+}
+
+/* Estilização de botões, entradas e seleções */
+
+/* Herda a fonte dos elementos pais para botões, entradas e seleções */
+button,
+input,
+select,
+textarea {
+  font: inherit; 
+  margin: 0; 
+}
+
+/* Estilização de opções de seleção */
+
+/* Define a fonte em negrito para opções de seleção */
+optgroup {
+  font-weight: bold;
+}
+
+/* Estilização de botões e entradas */
+
+/* Define o overflow para botões e entradas */
+button,
+input { 
+  overflow: visible;
+}
+
+/* Estilização de seleções */
+
+/* Remove a transformação de texto para seleções */
+button,
+select { 
+  text-transform: none;
+}
+
+/* Estilização de botões */
+
+/* Define a aparência de botões */
+button,
+html [type="button"], 
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; 
+}
+
+/* Remove a borda interna do botão */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Restaura os estilos de foco */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Estilização de campos */
+
+/* Define a aparência da borda, margem e preenchimento para campos */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* Estilização de legendas */
+
+/* Ajusta a aparência das legendas */
+legend {
+  box-sizing: border-box; 
+  color: inherit; 
+  display: table; 
+  max-width: 100%; 
+  padding: 0; 
+  white-space: normal; 
+}
+
+/* Estilização de áreas de texto */
+
+/* Define o overflow para áreas de texto */
+textarea {
+  overflow: auto;
+}
+
+/* Estilização de caixas de seleção e botões de rádio */
+
+/* Define a aparência das caixas de seleção e botões de rádio */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; 
+  padding: 0; 
+}
+
+/* Estilização de botões de rotação */
+
+/* Ajusta a altura para botões de rotação interna e externa */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Estilização de campos de pesquisa */
+
+/* Define a aparência dos campos de pesquisa */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; 
+}
+
+/* Remove o botão de cancelar pesquisa e decoração de pesquisa */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Estilização de placeholders */
+
+/* Define a cor do placeholder */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/* Estilização de botões de upload de arquivo */
+
+/* Define a aparência dos botões de upload de arquivo */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; 
+  font: inherit; 
+}

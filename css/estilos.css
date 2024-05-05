@@ -1,0 +1,278 @@
+/*
+GERAL
+*/
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; /* Define a fonte padrão para o corpo do documento */
+    color: #4d4d4d; /* Define a cor do texto */
+}
+
+h1, h2, h3 {
+    margin: 0; /* Remove as margens padrão dos títulos */
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif; /* Define a fonte para os títulos */
+    font-weight: 700; /* Define o peso da fonte para os títulos */
+}
+
+.botao {
+    color: #f1f1f1; /* Define a cor do texto dos botões */
+    text-decoration: none; /* Remove a decoração de texto dos botões */
+    padding: 10px 30px; /* Define o preenchimento interno dos botões */
+    background-color: #8f3faf; /* Define a cor de fundo dos botões */
+    font-size: .9em; /* Define o tamanho da fonte dos botões */
+    border-radius: 3px; /* Define o raio das bordas dos botões */
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+    display: flex; /* Define a exibição do elemento como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    background-color: #4d4d4d; /* Define a cor de fundo da navegação */
+}
+
+nav > a {
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #f1f1f1; /* Define a cor do texto dos links */
+    font-weight: 700; /* Define o peso da fonte dos links */
+    font-size: 28px; /* Define o tamanho da fonte dos links */
+    font-family: Pacifico, serif; /* Define a fonte dos links */
+}
+
+nav ul {
+    list-style: none; /* Remove os estilos de lista padrão */
+    padding: 0; /* Remove o preenchimento padrão das listas */
+    display: flex; /* Define a exibição da lista como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    width: 100%; /* Define a largura total da lista */
+}
+
+nav ul li {
+    text-align: center; /* Alinha o texto dos itens da lista ao centro */
+    width: 100%; /* Define a largura total dos itens da lista */
+}
+
+nav ul li a {
+    display: inline-block; /* Define os links como elementos de bloco em linha */
+    padding: 10px 0; /* Define o preenchimento dos links */
+    width: 100%; /* Define a largura total dos links */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #f1f1f1; /* Define a cor do texto dos links */
+}
+
+
+/*
+CABEÇALHO
+*/
+
+header {
+    background-image: url('../img/god.jpg'); /* Define a imagem de fundo do cabeçalho */
+    background-size: cover; /* Define o tamanho da imagem de fundo como cobertura */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    color: #f1f1f1; /* Define a cor do texto */
+    display: flex; /* Define a exibição do elemento como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Define o preenchimento interno */
+}
+
+header p {
+    margin-bottom: 2em; /* Define a margem inferior dos parágrafos */
+}
+
+/*
+SOBRE
+*/
+
+#sobre {
+    display: flex; /* Define a exibição do elemento como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    text-align: center; /* Centraliza o texto */
+    padding: 0 20px 20px; /* Define o preenchimento interno */
+    background-color: #8f3faf; /* Define a cor de fundo */
+    color: #f1f1f1; /* Define a cor do texto */
+}
+
+#sobre p {
+    margin-bottom: 2.5em; /* Define a margem inferior dos parágrafos */
+}
+
+#sobre .botao {
+    background-color: #f1f1f1; /* Define a cor de fundo dos botões */
+    color: #4d4d4d; /* Define a cor do texto dos botões */
+}
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+    padding: 20px; /* Define o preenchimento interno */
+    display: flex; /* Define a exibição do elemento como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+}
+
+#servicos div {
+    display: flex; /* Define a exibição do elemento como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 30px; /* Define a margem superior */
+}
+
+/*
+CONTATO
+*/
+
+#contato {
+    display: flex; /* Define a exibição do elemento como flexível */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Define o preenchimento interno */
+}
+
+/*
+RODAPÉ
+*/
+
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Define o preenchimento interno */
+    background-color: #4d4d4d; /* Define a cor de fundo */
+    color: #f1f1f1; /* Define a cor do texto */
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+    
+    /*
+    NAVEGAÇÃO
+    */
+
+    nav {
+        flex-direction: row; /* Define a direção do flex como linha */
+        justify-content: space-around; /* Distribui uniformemente os itens ao longo do eixo principal */
+    }
+    
+    nav ul {
+        flex-direction: row; /* Define a direção do flex como linha */
+        width: 70%; /* Define a largura da lista */
+    }
+    
+    /*
+    CABEÇALHO
+    */
+    
+    header {
+        height: 600px; /* Define a altura do cabeçalho */
+        height: 60vh; /* Define a altura do cabeçalho em relação à altura da janela de visualização */
+        justify-content: center; /* Alinha os itens no centro do eixo principal */
+    }
+    
+    /*
+    SOBRE
+    */
+    
+    #sobre {
+        background-color: #6b5b95; /* Define a cor de fundo */
+        color: #fff; /* Define a cor do texto */
+        padding: 50px; /* Define o preenchimento interno */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    #sobre p {
+        margin-bottom: 20px; /* Define a margem inferior dos parágrafos */
+    }
+    
+    #sobre .botao {
+        color: #fff; /* Define a cor do texto dos botões */
+        background-color: #ff6f61; /* Define a cor de fundo dos botões */
+        padding: 10px 20px; /* Define o preenchimento interno dos botões */
+        border-radius: 5px; /* Define o raio das bordas dos botões */
+        text-decoration: none; /* Remove a decoração de texto dos botões */
+        transition: background-color 0.3s ease; /* Define uma transição suave */
+    }
+    
+    #sobre .botao:hover {
+        background-color: #e94560; /* Define a cor de fundo dos botões ao passar o mouse */
+    }
+    
+    /*
+    SERVIÇOS
+    */
+    
+    #servicos {
+        flex-direction: row; /* Define a direção do flex como linha */
+        flex-wrap: wrap; /* Permite que os itens se ajustem automaticamente em várias linhas */
+        align-items: flex-start; /* Alinha os itens no início do eixo transversal */
+        max-width: 1000px; /* Define a largura máxima */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    
+    #servicos h2 {
+        text-align: center; /* Centraliza o texto */
+        width: 100%; /* Define a largura total */
+    }
+    
+    #servicos div {
+        flex-grow: 1; /* Define o crescimento flexível */
+        flex-basis: 150px; /* Define o tamanho inicial flexível */
+        padding: 0 10px; /* Define o preenchimento interno */
+    }
+    
+    /* 
+    PORTFOLIO 
+    */
+    
+    #portfolio {
+        text-align: center; /* Centraliza o texto */
+        padding-top: 20px; /* Define o preenchimento superior */
+    }
+
+    #portfolio h2 {
+        margin-bottom: 20px; /* Define a margem inferior dos títulos */
+    }
+
+    .portfolio-images {
+        display: flex; /* Define a exibição do elemento como flexível */
+        flex-wrap: wrap; /* Permite que os itens se ajustem automaticamente em várias linhas */
+        justify-content: space-around; /* Distribui uniformemente os itens ao longo do eixo principal */
+    }
+
+    .portfolio-images img {
+        max-width: 20%; /* Define a largura máxima das imagens */
+        margin-bottom: 20px; /* Define a margem inferior das imagens */
+    }
+    
+    /*
+    CONTATO
+    */
+    
+    #contato {
+        flex-direction: row; /* Define a direção do flex como linha */
+        flex-wrap: wrap; /* Permite que os itens se ajustem automaticamente em várias linhas */
+        justify-content: space-around; /* Distribui uniformemente os itens ao longo do eixo principal */
+        max-width: 500px; /* Define a largura máxima */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    
+    #contato h2,
+    #contato p {
+        width: 100%; /* Define a largura total */
+    }   
+}
+
+#toggleMenu {
+    display: none; /* Esconde o menu */
+}
